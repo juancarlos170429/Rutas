@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
 import Hero from './Hero/index'
 import Home from './Home'
 import Ruta1 from './Ruta1'
@@ -9,8 +8,9 @@ import View from '../layout/View'
 
 const RouterApp = () => {
   return (
-    <View>
+   
       <BrowserRouter>
+       <View>
         <Switch>
           <Route exac path="/ruta1">
             <Ruta1 />
@@ -25,8 +25,9 @@ const RouterApp = () => {
             <Home />
           </Route>
         </Switch>
+        </View>
       </BrowserRouter>
-    </View>
+   
   )
 }
 
